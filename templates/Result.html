@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        p{
+            max-width: max-content;
+            margin: auto;
+        }
+    </style>
+</head>
+<body  style="background: linear-gradient(to bottom, #4da6ff 11%, #ffff 100%);object-fit: cover;background-repeat: no-repeat;">
+    <h1 style="max-width: max-content; margin: auto">Result</h1>
+    <br>
+    <table style="max-width: max-content; margin: auto" border = 1>
+    <tr>
+        <td>index</td>
+        <td>Document</td>
+    </tr>
+    {% for i in range(num) %}
+        <tr>
+            <td>{{ i + 1 }}</td>
+            <td>
+                <p><a href="http://127.0.0.1:5000/Result_{{ matrix[i] }}" target="_blank">{{ matrix[i] }}</a></p>
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    <br>
+    <h2><a href="http://127.0.0.1:5000/Vector_Space_Model">Vector Space Model</a></h2>
+    <h2><a href="http://127.0.0.1:5000">Home</a></h2>
+</body>
+</html>

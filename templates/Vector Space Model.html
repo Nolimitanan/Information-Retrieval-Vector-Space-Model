@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vector Space Model</title>
+    <link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+    <style>
+         h2{
+            text-align: center;
+        }
+            form{
+                max-width: max-content;
+                margin: auto;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            p{
+                max-width: max-content;
+                margin: auto;
+            }
+        </style>
+</head>
+<body  style="background: linear-gradient(to bottom, #4da6ff 11%, #ffff 100%);object-fit: cover;background-repeat: no-repeat;">
+        <form action = "http://127.0.0.1:5000/Vector Space Model Result" method = "POST">
+                <h1><label for="query" style="padding-bottom: 8px">Enter Query</label></h1>
+                <input type = "text" name = "query"/>
+                <br>
+                <input type = "submit" value = "submit"/>
+        </form>
+        <h2><a href="http://127.0.0.1:5000">Home</a></h2>
+</body>
+</html>
